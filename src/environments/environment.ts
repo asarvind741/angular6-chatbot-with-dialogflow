@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  DIALOG_CLIENT_TOKEN: '07c2e0ac56ec40779a61094a45503850',
+  DIALOG_DEVELOPER_TOKEN: 'fd76b0e1cd4445028235b076d5d0a227',
+  DIALOG_BASE_URL:'https://api.dialogflow.com/v1/query?v=20150910'
+  // // 20170712
 };
 
 /*

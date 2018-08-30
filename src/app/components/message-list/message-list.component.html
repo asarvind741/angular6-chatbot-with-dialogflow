@@ -1,0 +1,10 @@
+<div class = "chat-list">
+  <div><img src="../../../assets/chatbot.jpg" [ngStyle] = "{'width': '100px'}">
+   <strong>Need Help?</strong> 
+  </div>
+  <ul class="list-group">
+    <message-item 
+    *ngFor = "let msg of messages "
+    [message] = "msg"></message-item>
+  </ul>
+</div>
