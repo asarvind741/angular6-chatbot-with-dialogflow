@@ -31,7 +31,8 @@ export class MessageFormComponent implements OnInit {
 
     this.dialogFlowService.getResponse(this.query)
     .subscribe((response: HttpResponse<any>) => {
-      this.messages.push( new Message(response.result.fulfillment.speech, response.timestamp))
+      console.log("resp", response)
+      this.messages.push( new Message(response['result'].fulfillment.speech, response['timestamp']))
       this.query = '';
     })
   
